@@ -11,21 +11,32 @@
 			<div class="dropdown">
 				<button class="dropbtn"> 올려주세요. </button>
 				<div class="dropdown-content" id="myDropdown">
-					<form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
+					
+                    <form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
 					<input type="file" name="upfile" accept="image/*">
-					<!--<section class="tab-area">    
-  						<span id="Time"></span>
-  						<span id="Location"></span>
-  						<span id="Emotion"></span>-->
-						<a href="#"> Time </a>
-						<a href="#"> Location </a>
-						<a href="#"> Emotion </a>
- 
-  					<!--<article class="tab">Time content</article>
-  					<article class="tab">Location content</article>  
-  					<article class="tab">Emotion content</article>  
-					</section>-->					
+                    
+                    <!-- tab -->
+                    <section class="uploadConditions">
+                        <label for="time"><a href="#time">Time</a></label>
+                        <label for="location"><a href="#location">Location</a></label>
+                        <label for="emotion"><a href="#emotion">Emotion</a></label>
+                    </section>
+                        
+                    <div class="tab_item" id="time">
+                        Time contents
+                    </div>
+
+                    <div class="tab_item" id="location">
+                        Location contents
+                    </div>
+
+                    <div class="tab_item" id="emotion">
+                        Emotion contents
+                    </div>
+                    <!-- tab 끝 -->
+                        
 					<input type="submit" value="전송">
+                    </form>
 				</div>
 			</div>
 		</div>
