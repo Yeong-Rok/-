@@ -1,0 +1,38 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Today's_sky_intro.css"/>
+		<title>오늘하늘</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="tagline">
+			<h1>당신의 오늘 하늘 어때요?</h1>
+			<div class="dropdown">
+				<button class="dropbtn"> 올려주세요. </button>
+				<div class="dropdown-content" id="myDropdown">
+					<form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
+					<input type="file" name="upfile" accept="image/*">
+					<!--<section class="tab-area">    
+  						<span id="Time"></span>
+  						<span id="Location"></span>
+  						<span id="Emotion"></span>-->
+						<a href="#"> Time </a>
+						<a href="#"> Location </a>
+						<a href="#"> Emotion </a>
+ 
+  					<!--<article class="tab">Time content</article>
+  					<article class="tab">Location content</article>  
+  					<article class="tab">Emotion content</article>  
+					</section>-->					
+					<input type="submit" value="전송">
+				</div>
+			</div>
+		</div>
+		<div class="button">
+			<a href="Today's_sky_homepage.html">
+				<img src="gotohomepagebutton.jpg">
+			</a>
+		</div>
+	</body>
+</html>

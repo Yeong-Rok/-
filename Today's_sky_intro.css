@@ -1,0 +1,72 @@
+body {
+	background-image: url("skyimage001.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: auto;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+ .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+ .dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+
+
+/*
+.tab-area{position:relative;margin:30px}
+a{padding:5px;color:#333;text-decoration:none;text-transform: uppercase;background:#ccc}
+a:hover{background:#eee}
+.tab{position:absolute;left:0;top:26px;width:50%;padding:1%;min-height:100px;background:#ddd}
+.tab:nth-of-type(2){display:none}
+.tab:nth-of-type(3){display:none}
+#Time:target ~ a:nth-of-type(1),
+#Location:target ~ a:nth-of-type(2),
+#Emotion:target ~ a:nth-of-type(3),
+#Location:not(:target) ~ a:nth-of-type(1){background:#ddd}
+#Location:target ~ .tab:nth-of-type(2){display:block}
+#Emotion:not(:target) ~ a:nth-of-type(2){background:#ddd}
+#Emotion:target ~ .tab:nth-of-type(3){display:block}
+*/
