@@ -6,14 +6,39 @@ body {
 	height: auto;
 }
 
+
+.tagline {
+	display:block;
+	align-items: center;
+	height:300px;
+	width:700px;
+	align-content: center;
+	margin:0 auto;
+	padding-top:18%;
+}
+
+.taglineim {
+    height:90px;
+    width:700px;
+    padding-bottom:4%;
+
+}
+
 /* 올려주세요 버튼 */
-.dropbtn { 
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+
+.dropbtn {
+    display:block;
+    background:rgba(175,225,255,0.3);
+    border: 1px solid white;
     cursor: pointer;
+    border-radius: 20px;
+    
+}
+
+.uploadim { 
+    height:60px;
+    width:200px;
+ 
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -36,7 +61,7 @@ body {
 
 /* 올려주세요 버튼에 hover 되었을 때, 버튼이 짙은 초록색으로 */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #7dbdfe;
 }
 
 
@@ -57,4 +82,8 @@ label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회�
 
 .tab_item:not(:target) {
     display:none;
+}
+
+.button{
+	float:right;
 }

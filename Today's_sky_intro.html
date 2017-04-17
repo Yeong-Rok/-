@@ -6,10 +6,12 @@
 		<meta charset="UTF-8">
 	</head>
 	<body>
-		<div class="tagline">
-			<h1>당신의 오늘 하늘 어때요?</h1>
-			<div class="dropdown">
-				<button class="dropbtn"> 올려주세요. </button>
+	<div align="center" class="tagline">
+			<img src="tagline.png" class="taglineim">
+		<div class="dropdown">
+				<button class="dropbtn">
+					<img src="upload.png" class="uploadim">
+				</button>	
 				<div class="dropdown-content" id="myDropdown">
 					
                     <form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
@@ -21,7 +23,7 @@
                         <label for="location"><a href="#location">Location</a></label>
                         <label for="emotion"><a href="#emotion">Emotion</a></label>
                     </section>
-                        
+               
                     <div class="tab_item" id="time">
                         Time contents
                     </div>
@@ -37,13 +39,16 @@
                         
 					<input type="submit" value="전송">
                     </form>
+                    </div>
 				</div>
 			</div>
-		</div>
-		<div class="button">
+	</div>
+			<div class="button">
 			<a href="Today's_sky_homepage.html">
 				<img src="gotohomepagebutton.jpg">
 			</a>
-		</div>
+			</div>
+		
+
 	</body>
 </html>
