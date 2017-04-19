@@ -52,6 +52,7 @@ body {
     display: none;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 10px;
 }
 
 /* 올려주세요 버튼에 hover 되었을 때, dropdown-content 보여주기 */
@@ -65,17 +66,28 @@ body {
 }
 
 
-label {
-  padding: 5px;
-  background: #ccc; /* 탭의 라벨 배경색 - 진한 회색 */
+section > label {
+    padding: 5px;
+    background: #ccc; /* 탭의 라벨 배경색 - 진한 회색 */
 }
 
-label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
+label > a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+section > label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
   background: #eee;  
 }
 
 
 /* target이 되면 보여주고 target이 안 되면 숨기는 기능입니다. */
+.tab_item {
+    width: 300px;
+    margin: auto;
+}
 .tab_item:target {
     display:block;
 }
@@ -86,4 +98,34 @@ label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회�
 
 .button{
 	float:right;
+}
+
+
+/*location select box*/
+select {
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 0;
+    border: solid 1px #BBC5CE;
+    padding: 5px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    width: 120px;
+    align-content: center;
+}
+
+.locationbox {
+    width: 300px;
+    align-items: middle;
+   /* align-content: center;*/
+}
+
+dd {
+    margin: auto;
+}
+
+.submit {
+    border: 1px black solid;
+    margin-bottom: 10px;
 }
