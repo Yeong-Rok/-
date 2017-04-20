@@ -1,30 +1,221 @@
 <DOCTYPE! html>
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="Today's_sky_home.css"/>
-		<title>오늘하늘</title>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<div class="dropdown">
-				<button class="dropbtn"> 올려주세요. </button>
-				<div class="dropdown-content" id="myDropdown">
-					<form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
-					<input type="file" name="upfile" accept="image/*">
-					<!--<section class="tab-area">    
-  						<span id="Time"></span>
-  						<span id="Location"></span>
-  						<span id="Emotion"></span>-->
-						<a href="#"> Time </a>
-						<a href="#"> Location </a>
-						<a href="#"> Emotion </a>
- 
-  					<!--<article class="tab">Time content</article>
-  					<article class="tab">Location content</article>  
-  					<article class="tab">Emotion content</article>  
-					</section>-->					
-					<input type="submit" value="전송">
-				</div>
-			</div>
-	</body>
-</html>
+    <html>
+
+    <head>
+        <link type="text/css" rel="stylesheet" href="Today's_sky_home.css" />
+        <title>오늘하늘</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div class="header">
+        <section class="uploadConditions">
+                        <label for="time"><a href="#time">Time</a></label>
+                        <label for="location"><a href="#location">Location</a></label>
+                        <label for="emotion"><a href="#emotion">Emotion</a></label>
+                    </section>
+               
+                    <div class="tab_item" id="time">
+                        Time contents
+                    </div>
+
+                    <div class="tab_item" id="location">
+                    <!--location select box-->
+                        <dl class="locationbox">
+                        	<dd>
+                        		<span class="select_form_loc01">
+                        			<select id="selectArea1" name="selectArea1" title="시/도 선택" class> <!--according to mouse location, class name changes-->
+                        				<option value>전체</option>
+                        				<option value="6110000">서울특별시</option>
+                        				<option value="6260000">부산광역시</option>
+                        				<option value="6270000">대구광역시</option>
+                        				<option value="6280000">인천광역시</option>
+                        				<option value="6290000">광주광역시</option>
+                        				<option value="6300000">대전광역시</option>
+                        				<option value="6310000">울산광역시</option>
+                        				<option value="5690000">세종특별자치시</option>
+                        				<option value="6410000">경기도</option>
+                        				<option value="6420000">강원도</option>
+                        				<option value="6430000">충청북도</option>
+                        				<option value="6440000">충청남도</option>
+                        				<option value="6450000">전라북도</option>
+                        				<option value="6460000">전라남도</option>
+                        				<option value="6470000">경상북도</option>
+                        				<option value="6480000">경상남도</option>
+                        				<option value="6500000">제주특별자치도</option>
+                        			</select>
+                        		</span>
+                        		<span class="select_form_loc02">
+                        			<select id="selectArea2" name="selectArea2" title="시/군/구 선택" class> <!--according to mouse location, class name changes-->
+                        				<option value>전체</option>
+                        			</select>
+                        		</span>
+                        	</dd>
+                        </dl>
+                    </div>
+        </div>
+                    <div class="tab_item" id="emotion">
+                        Emotion contents
+                    </div>
+            <!--            <ul>
+                <li>Time
+                    <div class="searchTab"></div></li>
+                <li><a href="">Location</a></li>
+                <li><a href="">Emotion</a></li>
+            </ul>
+    -->
+
+            <!--아이콘 넣어주세요 (돋보기, + )-->
+        </div>
+        <div class="photosBox">
+            <div class="wrapper1">
+                <div class="postit">
+                    <div class="postit_img1"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img2"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img3"></div>
+                </div>
+            </div>
+
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img4"></div>
+                </div>
+            </div>
+
+            <div class="wrapper5">
+                <div class="postit">
+                    <div class="postit_img5"></div>
+                </div>
+            </div>
+
+<!-- wrapper 반복합니다 -->
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img6"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img7"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img8"></div>
+                </div>
+            </div>
+
+            <div class="wrapper1">
+                <div class="postit">
+                    <div class="postit_img9"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img10"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img11"></div>
+                </div>
+            </div>
+
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img12"></div>
+                </div>
+            </div>
+
+<!-- 여기서부터 사진 반복합니다 -->
+            
+                        <div class="wrapper1">
+                <div class="postit">
+                    <div class="postit_img1"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img2"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img3"></div>
+                </div>
+            </div>
+
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img4"></div>
+                </div>
+            </div>
+
+            <div class="wrapper5">
+                <div class="postit">
+                    <div class="postit_img5"></div>
+                </div>
+            </div>
+
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img6"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img7"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img8"></div>
+                </div>
+            </div>
+
+            <div class="wrapper1">
+                <div class="postit">
+                    <div class="postit_img9"></div>
+                </div>
+            </div>
+
+            <div class="wrapper2">
+                <div class="postit">
+                    <div class="postit_img10"></div>
+                </div>
+            </div>
+
+            <div class="wrapper3">
+                <div class="postit">
+                    <div class="postit_img11"></div>
+                </div>
+            </div>
+
+            <div class="wrapper4">
+                <div class="postit">
+                    <div class="postit_img12"></div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+
+    </html>
