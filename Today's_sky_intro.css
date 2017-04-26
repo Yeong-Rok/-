@@ -1,5 +1,5 @@
 body {
-	background-image: url("skyimage001.jpg");
+	background-image: url("skyimage002.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -27,6 +27,7 @@ body {
 /* 올려주세요 버튼 */
 
 .dropbtn {
+    
     display:block;
     background:rgba(175,225,255,0.3);
     border: 1px solid white;
@@ -50,9 +51,10 @@ body {
 /* Dropdown Content (Hidden by Default) */
  .dropdown-content {
     display: none;
-    background-color: white;
+    background-color: rgba(220,238,243,0.5);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding-top: 10px;
+    margin-right: 20px;
 }
 
 /* 올려주세요 버튼에 hover 되었을 때, dropdown-content 보여주기 */
@@ -62,31 +64,192 @@ body {
 
 /* 올려주세요 버튼에 hover 되었을 때, 버튼이 짙은 초록색으로 */
 .dropdown:hover .dropbtn {
-    background-color: #7dbdfe;
+    background-color: #ccf2fc;
+}
+
+.dropdown-content{
+     border-radius: 20px;
 }
 
 
-section > label {
-    padding: 5px;
-    background: #ccc; /* 탭의 라벨 배경색 - 진한 회색 */
+section > label{
+  
 }
 
 label > a {
-    color: black;
-    padding: 12px 16px;
+    
+    padding: 16px;
     text-decoration: none;
     display: inline-block;
 }
 
-section > label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
-  background: #eee;  
+section > label :hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
+  background-color: #ccf2fc;  
+  border-radius: 30px;
 }
 
 
 /* target이 되면 보여주고 target이 안 되면 숨기는 기능입니다. */
+
+.label{
+    height:50px;
+    width:50px;
+
+}
+
+.time1 { 
+    cursor: pointer; }
+
+.time1 .time1-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time1.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time1 input[type=checkbox] {
+    display: none; 
+}
+
+.time1 input[type=checkbox]:checked + .time1-icon{
+    background-image: url(./icon/selecttime1.png); }
+
+.time2 { 
+    cursor: pointer; }
+
+.time2 .time2-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time2.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time2 input[type=checkbox] {
+    display: none; 
+}
+
+.time2 input[type=checkbox]:checked + .time2-icon{
+    background-image: url(./icon/selecttime2.png); }
+
+.time3 { 
+    cursor: pointer; }
+
+.time3 .time3-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time3.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time3 input[type=checkbox] {
+    display: none; 
+}
+
+.time3 input[type=checkbox]:checked + .time3-icon{
+    background-image: url(./icon/selecttime3.png); }
+
+.time4 { 
+    cursor: pointer; }
+
+.time4 .time4-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time4.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time4 input[type=checkbox] {
+    display: none; 
+}
+
+.time4 input[type=checkbox]:checked + .time4-icon{
+    background-image: url(./icon/selecttime4.png); }
+
+
+
+.surprised { 
+    cursor: pointer; }
+
+.surprised .surprised-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/surprised.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.surprised input[type=checkbox] {
+    display: none; 
+}
+
+.surprised input[type=checkbox]:checked + .surprised-icon{
+    background-image: url(./icon/selectsurprised.png); }
+
+.happy { 
+    cursor: pointer; }
+
+.happy .happy-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/happy.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.happy input[type=checkbox] {
+    display: none; 
+}
+
+.happy input[type=checkbox]:checked + .happy-icon{
+    background-image: url(./icon/selecthappy.png); }
+
+.tired { 
+    cursor: pointer; }
+
+.tired .tired-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/tired.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.tired input[type=checkbox] {
+    display: none; 
+}
+
+.tired input[type=checkbox]:checked + .tired-icon{
+    background-image: url(./icon/selecttired.png); }
+
+.sad { 
+    cursor: pointer; }
+
+.sad .sad-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/sad.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.sad input[type=checkbox] {
+    display: none; 
+}
+
+.sad input[type=checkbox]:checked + .sad-icon{
+    background-image: url(./icon/selectsad.png); }
+
+
+
+
 .tab_item {
     width: 300px;
     margin: auto;
+
 }
 .tab_item:target {
     display:block;
@@ -96,9 +259,11 @@ section > label:hover { /* 탭의 라벨에 마우스를 올리면 배경색 - �
     display:none;
 }
 
+
 .button{
-	float:right;
+	float:right;  
 }
+
 
 
 /*location select box*/

@@ -5,53 +5,320 @@ body {
     background-size: cover;
 }
 
+.logo {
+    height:50px;
+    width:130px;
+    float:right;
+    margin: 5px 55px 5px 0px;
+}
+
 .header {
-    width: 100%;
-    height: auto;
-    padding-left: 10px;
+    width: 10px;
+    height:40px;
+    margin:0 auto;
+    padding: 13px 150% 3px 10%;
+   align-items:center;
+    display:block;
+    align-content: center;
+}
+
+.search {
+   
+    height: 37px;
+    width: 45px;
+  
+ 
+}
+
+/* 올려주세요 버튼 */
+#mydropdown1{
+
+height:170px;
+width:260px;
+
+
 }
 
 
-section>label {
-    padding: 5px;
-    background: transparent;    /* 탭의 라벨 배경색 - 투명 */
-    border-radius: 20px;
+#searchbtn{
+    position: relative;
+    display:inline-block;
+    background:rgba(0,0,0,0);
+    border: 0px solid white;
+    cursor: pointer;
+      margin-left: 50px;
+
 }
 
-label>a {
-    color: black;
+.dropbtn {
+    
+    position: relative;
+    display:inline-block;
+    background:rgba(0,0,0,0);
+    border: 0px solid white;
+    cursor: pointer;
+    
+}
+
+.plus { 
+
+    height:36px;
+    width:42px;
+ 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position:fixed;
+    align-items: center;
+    display: inline-block;
+    z-index:1;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+ .dropdown-content {
+    height:220px;
+    width:260px;
+    align-items: center;
+    display: none;
+    background-color: rgba(220,238,243,0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin:0 auto;
+    padding:30px 0px 5px 40px;
+    z-index: 1;
+    float:center;
+}
+
+.submit{
+    margin-left: 100px
+
+}
+/* 올려주세요 버튼에 hover 되었을 때, dropdown-content 보여주기 */
+.dropdown:hover .dropdown-content {
+    display:block;
+    z-index: 1;
+    padding-right: 50px
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ccf2fc;
+    z-index: 1;
+}
+
+.dropdown:hover #searchbtn {
+    background-color: #ccf2fc;
+    z-index: 1;
+
+
+}
+
+.dropdown-content{
+     border-radius: 20px;
+     z-index: 1;
+}
+
+
+section > label{
+ 
+}
+
+label > a {
+      color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: inline-block;
 }
 
-section>label:hover {
-    /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
-    background: #fff;
+section > label :hover { /* 탭의 라벨에 마우스를 올리면 배경색 - 밝은 회색 */
+  background-color: #ccf2fc;  
+  border-radius: 30px;
 }
 
 
 /* target이 되면 보여주고 target이 안 되면 숨기는 기능입니다. */
 
-.tab_item {
-    width: 300px;
+.label{
+    height:50px;
+    width:50px;
+
 }
 
+.time1 { 
+    cursor: pointer; }
+
+.time1 .time1-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time1.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time1 input[type=checkbox] {
+    display: none; 
+}
+
+.time1 input[type=checkbox]:checked + .time1-icon{
+    background-image: url(./icon/selecttime1.png); }
+
+.time2 { 
+    cursor: pointer; }
+
+.time2 .time2-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time2.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time2 input[type=checkbox] {
+    display: none; 
+}
+
+.time2 input[type=checkbox]:checked + .time2-icon{
+    background-image: url(./icon/selecttime2.png); }
+
+.time3 { 
+    cursor: pointer; }
+
+.time3 .time3-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time3.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time3 input[type=checkbox] {
+    display: none; 
+}
+
+.time3 input[type=checkbox]:checked + .time3-icon{
+    background-image: url(./icon/selecttime3.png); }
+
+.time4 { 
+    cursor: pointer; }
+
+.time4 .time4-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/time4.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.time4 input[type=checkbox] {
+    display: none; 
+}
+
+.time4 input[type=checkbox]:checked + .time4-icon{
+    background-image: url(./icon/selecttime4.png); }
+
+
+
+.surprised { 
+    cursor: pointer; }
+
+.surprised .surprised-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/surprised.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.surprised input[type=checkbox] {
+    display: none; 
+}
+
+.surprised input[type=checkbox]:checked + .surprised-icon{
+    background-image: url(./icon/selectsurprised.png); }
+
+.happy { 
+    cursor: pointer; }
+
+.happy .happy-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/happy.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.happy input[type=checkbox] {
+    display: none; 
+}
+
+.happy input[type=checkbox]:checked + .happy-icon{
+    background-image: url(./icon/selecthappy.png); }
+
+.tired { 
+    cursor: pointer; }
+
+.tired .tired-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/tired.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.tired input[type=checkbox] {
+    display: none; 
+}
+
+.tired input[type=checkbox]:checked + .tired-icon{
+    background-image: url(./icon/selecttired.png); }
+
+.sad { 
+    cursor: pointer; }
+
+.sad .sad-icon  { 
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(./icon/sad.png) left center no-repeat;
+    vertical-align: middle;
+    transition-duration: .3s; }
+
+.sad input[type=checkbox] {
+    display: none; 
+}
+
+.sad input[type=checkbox]:checked + .sad-icon{
+    background-image: url(./icon/selectsad.png); }
+
+
+/* target이 되면 보여주고 target이 안 되면 숨기는 기능입니다. */
+.tab_item {
+    width: 300px;
+    margin: auto;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: -20px;
+}
 .tab_item:target {
-    display: block;
+    display:block;
 }
 
 .tab_item:not(:target) {
-    display: none;
+    display:none;
 }
 
-.button {
-    float: right;
+.button{
+    float:right;
 }
 
+
+#location{
+    float:center;
+    padding:5px;
+}
 
 /*location select box*/
-
 select {
     display: inline-block;
     background-color: #fff;
@@ -63,19 +330,28 @@ select {
     border-radius: 2px;
     width: 120px;
     align-content: center;
+
 }
 
 .locationbox {
+    margin: auto;
     width: 300px;
     align-items: middle;
-    /* align-content: center;*/
+   /* align-content: center;*/
 }
 
 dd {
     margin: auto;
 }
 
+.submit {
+    border: 1px black solid;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
 .photosBox {
+    display:relative;
     text-align: center;
     margin: 5px auto;
     padding: 20px 20px 20px 20px;
@@ -160,7 +436,7 @@ div div {
 .postit_img1 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky1.jpg);
+    background-image: url(./sky_image/sky1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -169,7 +445,7 @@ div div {
 .postit_img2 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky2.jpg);
+    background-image: url(./sky_image/sky2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -178,7 +454,7 @@ div div {
 .postit_img3 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky3.jpg);
+    background-image: url(./sky_image/sky3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -187,7 +463,7 @@ div div {
 .postit_img4 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky4.jpg);
+    background-image: url(./sky_image/sky4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -196,7 +472,7 @@ div div {
 .postit_img5 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky5.jpg);
+    background-image: url(./sky_image/sky5.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -205,7 +481,7 @@ div div {
 .postit_img6 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky6.jpg);
+    background-image: url(./sky_image/sky6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -214,7 +490,7 @@ div div {
 .postit_img7 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky7.jpg);
+    background-image: url(./sky_image/sky7.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -223,7 +499,7 @@ div div {
 .postit_img8 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky8.jpg);
+    background-image: url(./sky_image/sky8.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -232,7 +508,7 @@ div div {
 .postit_img9 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky9.jpg);
+    background-image: url(./sky_image/sky9.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -241,7 +517,7 @@ div div {
 .postit_img10 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky10.jpg);
+    background-image: url(./sky_image/sky10.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -250,7 +526,7 @@ div div {
 .postit_img11 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky11.jpg);
+    background-image: url(./sky_image/sky11.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -259,7 +535,7 @@ div div {
 .postit_img12 {
     width: 100%;
     height: 100%;
-    background-image: url(/sky_image/sky12.jpg);
+    background-image: url(./sky_image/sky12.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

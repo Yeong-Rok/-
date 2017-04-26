@@ -8,67 +8,158 @@
     </head>
 
     <body>
+        <div class="logo">
+            <a href="./Today's_sky_intro.html"><img src="./icon/logo.png" class="logo"></a>
+        </div>    
         <div class="header">
-        <section class="uploadConditions">
-                  <!--  <label for="intro"><a href="Today's_sky_intro.html">Intro</a></label> 
-                        <label for="home"><a href="Today's_sky_homepage.html">Home</a></label> -->
-                        <label for="time"><a href="#time">Time</a></label>
-                        <label for="location"><a href="#location">Location</a></label>
-                        <label for="emotion"><a href="#emotion">Emotion</a></label>
+                <div class="dropdown" id="myDropdown1">
+                    
+                    <button class="dropbtn" id="searchbtn">
+                     <img src="./icon/search.png" class="search">
+                    </button>
+                    
+                    <div class="dropdown-content" >
+                    
+                    <!-- tab -->
+                    <section class="uploadConditions">
+                        <label for="time"><a href="#time"><img class="label" src="./icon/time.png"></a></label>
+                        <label for="location"><a href="#location"><img class="label" src="./icon/location.png"></a></label>
+                        <label for="emotion"><a href="#emotion"><img class="label" src="./icon/emotion.png"></a></label>
                     </section>
                
                     <div class="tab_item" id="time">
-                        Time contents
+                   
+                          <label class="time1"><input type="checkbox" name="time" value="time1"><i class="time1-icon"></i></label>
+                          <label class="time2"><input type="checkbox" name="time" value="time2"><i class="time2-icon"></i></label>
+                          <label class="time3"><input type="checkbox" name="time" value="time3"><i class="time3-icon"></i></label>
+                          <label class="time4"><input type="checkbox" name="time" value="time4"><i class="time4-icon"></i></label>
+                        
                     </div>
 
                     <div class="tab_item" id="location">
                     <!--location select box-->
                         <dl class="locationbox">
-                        	<dd>
-                        		<span class="select_form_loc01">
-                        			<select id="selectArea1" name="selectArea1" title="시/도 선택" class> <!--according to mouse location, class name changes-->
-                        				<option value>전체</option>
-                        				<option value="6110000">서울특별시</option>
-                        				<option value="6260000">부산광역시</option>
-                        				<option value="6270000">대구광역시</option>
-                        				<option value="6280000">인천광역시</option>
-                        				<option value="6290000">광주광역시</option>
-                        				<option value="6300000">대전광역시</option>
-                        				<option value="6310000">울산광역시</option>
-                        				<option value="5690000">세종특별자치시</option>
-                        				<option value="6410000">경기도</option>
-                        				<option value="6420000">강원도</option>
-                        				<option value="6430000">충청북도</option>
-                        				<option value="6440000">충청남도</option>
-                        				<option value="6450000">전라북도</option>
-                        				<option value="6460000">전라남도</option>
-                        				<option value="6470000">경상북도</option>
-                        				<option value="6480000">경상남도</option>
-                        				<option value="6500000">제주특별자치도</option>
-                        			</select>
-                        		</span>
-                        		<span class="select_form_loc02">
-                        			<select id="selectArea2" name="selectArea2" title="시/군/구 선택" class> <!--according to mouse location, class name changes-->
-                        				<option value>전체</option>
-                        			</select>
-                        		</span>
-                        	</dd>
+                            <dd>
+                                <span class="select_form_loc01">
+                                    <select id="selectArea1" name="selectArea1" title="시/도 선택" class> <!--according to mouse location, class name changes-->
+                                        <option value>전체</option>
+                                        <option value="6110000">서울특별시</option>
+                                        <option value="6260000">부산광역시</option>
+                                        <option value="6270000">대구광역시</option>
+                                        <option value="6280000">인천광역시</option>
+                                        <option value="6290000">광주광역시</option>
+                                        <option value="6300000">대전광역시</option>
+                                        <option value="6310000">울산광역시</option>
+                                        <option value="5690000">세종특별자치시</option>
+                                        <option value="6410000">경기도</option>
+                                        <option value="6420000">강원도</option>
+                                        <option value="6430000">충청북도</option>
+                                        <option value="6440000">충청남도</option>
+                                        <option value="6450000">전라북도</option>
+                                        <option value="6460000">전라남도</option>
+                                        <option value="6470000">경상북도</option>
+                                        <option value="6480000">경상남도</option>
+                                        <option value="6500000">제주특별자치도</option>
+                                    </select>
+                                </span>
+                                <span class="select_form_loc02">
+                                    <select id="selectArea2" name="selectArea2" title="시/군/구 선택" class> <!--according to mouse location, class name changes-->
+                                        <option value>전체</option>
+                                    </select>
+                                </span>
+                            </dd>
                         </dl>
                     </div>
-        </div>
-                    <div class="tab_item" id="emotion">
-                        Emotion contents
-                    </div>
-            <!--            <ul>
-                <li>Time
-                    <div class="searchTab"></div></li>
-                <li><a href="">Location</a></li>
-                <li><a href="">Emotion</a></li>
-            </ul>
-    -->
 
-            <!--아이콘 넣어주세요 (돋보기, + )-->
-        </div>
+                    <div class="tab_item" id="emotion">
+                           <label class="surprised"><input type="checkbox" name="emotion" value="surprised"><i class="surprised-icon"></i></label>
+                          <label class="happy"><input type="checkbox" name="emotion" value="happy"><i class="happy-icon"></i></label>
+                          <label class="tired"><input type="checkbox" name="emotion" value="tired"><i class="tired-icon"></i></label>
+                          <label class="sad"><input type="checkbox" name="emotion" value="sad"><i class="sad-icon"></i></label>
+                    </div>
+              
+                    </div>
+                </div>
+
+
+      
+
+
+                <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="./icon/plus.png" class="plus">
+                </button>   
+                <div class="dropdown-content" id="myDropdown">
+                    
+                    <form method="POST" ENCTYPE="multipart/form-data" action="upload_ok.php">
+                    <input type="file" name="upfile" accept="image/*">
+                    
+                    <!-- tab -->
+                    <section class="uploadConditions">
+                        <label for="time"><a href="#time"><img class="label" src="./icon/time.png"></a></label>
+                        <label for="location"><a href="#location"><img class="label" src="./icon/location.png"></a></label>
+                        <label for="emotion"><a href="#emotion"><img class="label" src="./icon/emotion.png"></a></label>
+                    </section>
+               
+                    <div class="tab_item" id="time">
+                   
+                          <label class="time1"><input type="checkbox" name="time" value="time1"><i class="time1-icon"></i></label>
+                          <label class="time2"><input type="checkbox" name="time" value="time2"><i class="time2-icon"></i></label>
+                          <label class="time3"><input type="checkbox" name="time" value="time3"><i class="time3-icon"></i></label>
+                          <label class="time4"><input type="checkbox" name="time" value="time4"><i class="time4-icon"></i></label>
+                        
+                    </div>
+
+                    <div class="tab_item" id="location">
+                    <!--location select box-->
+                        <dl class="locationbox">
+                            <dd>
+                                <span class="select_form_loc01">
+                                    <select id="selectArea1" name="selectArea1" title="시/도 선택" class> <!--according to mouse location, class name changes-->
+                                        <option value>전체</option>
+                                        <option value="6110000">서울특별시</option>
+                                        <option value="6260000">부산광역시</option>
+                                        <option value="6270000">대구광역시</option>
+                                        <option value="6280000">인천광역시</option>
+                                        <option value="6290000">광주광역시</option>
+                                        <option value="6300000">대전광역시</option>
+                                        <option value="6310000">울산광역시</option>
+                                        <option value="5690000">세종특별자치시</option>
+                                        <option value="6410000">경기도</option>
+                                        <option value="6420000">강원도</option>
+                                        <option value="6430000">충청북도</option>
+                                        <option value="6440000">충청남도</option>
+                                        <option value="6450000">전라북도</option>
+                                        <option value="6460000">전라남도</option>
+                                        <option value="6470000">경상북도</option>
+                                        <option value="6480000">경상남도</option>
+                                        <option value="6500000">제주특별자치도</option>
+                                    </select>
+                                </span>
+                                <span class="select_form_loc02">
+                                    <select id="selectArea2" name="selectArea2" title="시/군/구 선택" class> <!--according to mouse location, class name changes-->
+                                        <option value>전체</option>
+                                    </select>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="tab_item" id="emotion">
+                           <label class="surprised"><input type="checkbox" name="emotion" value="surprised"><i class="surprised-icon"></i></label>
+                          <label class="happy"><input type="checkbox" name="emotion" value="happy"><i class="happy-icon"></i></label>
+                          <label class="tired"><input type="checkbox" name="emotion" value="tired"><i class="tired-icon"></i></label>
+                          <label class="sad"><input type="checkbox" name="emotion" value="sad"><i class="sad-icon"></i></label>
+                    </div>
+                    <!-- tab 끝 -->
+                     
+                    <input class="submit" type="submit" value="전송">
+                    </form>
+                    </div>
+                </div>
+            </div>
+   
+     
         <div class="photosBox">
             <div class="wrapper1">
                 <div class="postit">
